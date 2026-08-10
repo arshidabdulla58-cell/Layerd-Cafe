@@ -320,18 +320,10 @@ document.getElementById("checkout-btn").addEventListener("click", function () {
 
     }
 
-    alert(
-        "🎉 Thank you for ordering from Layered Cafe!\n\nYour order has been placed successfully."
-    );
-
-    cart = [];
-
-    saveCart();
-
-    displayCart();
+    // Open checkout page
+    window.location.href = "checkout.html";
 
 });
-
 
 /*=========================================================
                 INITIALIZE
