@@ -38,10 +38,11 @@ header{
     box-shadow:0 5px 20px rgba(0,0,0,.3);
 }
 
-.logo{
+.logo a{
     font-size:28px;
     font-weight:700;
     color:#6BBE44;
+    text-decoration:none;
 }
 
 nav ul{
