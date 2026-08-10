@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Layered Cafe | Cart</title>
+
+    <link rel="stylesheet" href="cart.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--======================
+        NAVBAR
+=======================-->
+
+<header>
+
+    <div class="logo">
+
+        <i class="fa-solid fa-mug-hot"></i>
+
+        Layered Cafe
+
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="menu.html">Menu</a></li>
+
+            <li>
+
+                <a href="cart.html" class="active">
+
+                    Cart
+
+                    <span id="cart-count">0</span>
+
+                </a>
+
+            </li>
+
+            <li><a href="dashboard.html">Dashboard</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!--======================
+        HERO
+=======================-->
+
+<section class="cart-hero">
+
+    <h1>
+
+        Your Shopping Cart
+
+    </h1>
+
+    <p>
+
+        Review your selected items before checkout.
+
+    </p>
+
+</section>
+
+<!--======================
+        CART
+=======================-->
+
+<section class="cart-container">
+
+    <div class="cart-items" id="cart-items">
+
+        <!-- Products Loaded Here -->
+
+    </div>
+
+    <div class="cart-summary">
+
+        <h2>
+
+            Order Summary
+
+        </h2>
+
+        <div class="summary-row">
+
+            <span>Subtotal</span>
+
+            <span id="subtotal">₹0</span>
+
+        </div>
+
+        <div class="summary-row">
+
+            <span>GST (5%)</span>
+
+            <span id="gst">₹0</span>
+
+        </div>
+
+        <div class="summary-row total">
+
+            <span>Total</span>
+
+            <span id="grand-total">₹0</span>
+
+        </div>
+
+        <button id="clear-cart">
+
+            <i class="fa-solid fa-trash"></i>
+
+            Clear Cart
+
+        </button>
+
+        <button id="checkout-btn">
+
+            <i class="fa-solid fa-credit-card"></i>
+
+            Proceed to Checkout
+
+        </button>
+
+    </div>
+
+</section>
+<!--=================================
+        EMPTY CART MESSAGE
+==================================-->
+
+<div id="empty-cart" class="empty-cart" style="display:none;">
+
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    <h2>Your Cart is Empty</h2>
+
+    <p>
+
+        Looks like you haven't added any delicious food yet.
+
+    </p>
+
+    <a href="menu.html" class="shop-btn">
+
+        <i class="fa-solid fa-utensils"></i>
+
+        Browse Menu
+
+    </a>
+
+</div>
+
+<!--=================================
+        TOAST NOTIFICATION
+==================================-->
+
+<div id="toast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <span id="toast-message">
+
+        Item Updated Successfully
+
+    </span>
+
+</div>
+
+<!--=================================
+        FOOTER
+==================================-->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-logo">
+
+            <i class="fa-solid fa-mug-hot"></i>
+
+            <h2>Layered Cafe</h2>
+
+        </div>
+
+        <p>
+
+            Fresh Food • Great Coffee • Happy Moments
+
+        </p>
+
+        <div class="footer-social">
+
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="#"><i class="fab fa-instagram"></i></a>
+
+            <a href="#"><i class="fab fa-twitter"></i></a>
+
+            <a href="#"><i class="fab fa-youtube"></i></a>
+
+        </div>
+
+        <p class="copyright">
+
+            © 2026 Layered Cafe. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!--=================================
+        JAVASCRIPT
+==================================-->
+
+<script src="cart.js"></script>
+
+</body>
+
+</html>

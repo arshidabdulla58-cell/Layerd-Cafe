@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Layered Cafe | Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+<!--======================
+        NAVBAR
+=======================-->
+
+<header>
+
+    <div class="logo">
+
+        <i class="fa-solid fa-mug-hot"></i>
+
+        Layered Cafe
+
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="menu.html">Menu</a></li>
+
+            <li><a href="cart.html">Cart</a></li>
+
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<!--======================
+        HERO
+=======================-->
+
+<section class="dashboard-title">
+
+    <h1>
+
+        Admin Dashboard
+
+    </h1>
+
+    <p>
+
+        Manage all Layered Cafe menu items from one place.
+
+    </p>
+
+</section>
+
+
+<!--======================
+        STATISTICS
+=======================-->
+
+<section class="dashboard-stats">
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-burger"></i>
+
+        <h3>Total Products</h3>
+
+        <h1 id="total-products">0</h1>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-layer-group"></i>
+
+        <h3>Categories</h3>
+
+        <h1 id="total-categories">0</h1>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-indian-rupee-sign"></i>
+
+        <h3>Total Value</h3>
+
+        <h1 id="total-value">₹0</h1>
+
+    </div>
+
+</section>
+
+
+<!--======================
+        MAIN CONTAINER
+=======================-->
+
+<section class="dashboard-container">
+
+
+<!--======================
+        PRODUCT FORM
+=======================-->
+
+<div class="form-section">
+
+<h2>
+
+<i class="fa-solid fa-plus"></i>
+
+Add / Update Product
+
+</h2>
+
+<form id="product-form">
+
+<div class="input-group">
+
+<label>Product Name</label>
+
+<input
+type="text"
+id="product-name"
+placeholder="Enter Product Name"
+required>
+
+</div>
+
+
+<div class="input-group">
+
+<label>Price</label>
+
+<input
+type="number"
+id="product-price"
+placeholder="Enter Price"
+required>
+
+</div>
+
+
+<div class="input-group">
+
+<label>Category</label>
+
+<select id="product-category" required>
+
+<option value="">Select Category</option>
+
+<option>Burger</option>
+
+<option>Pizza</option>
+
+<option>Sandwich</option>
+
+<option>Fries</option>
+
+<option>Shake</option>
+
+<option>Juice</option>
+
+<option>Coffee</option>
+
+</select>
+
+</div>
+
+
+<div class="input-group">
+
+<label>Image URL</label>
+
+<input
+type="url"
+id="product-image"
+placeholder="https://example.com/image.jpg"
+required>
+
+</div>
+
+
+<div class="preview-box">
+
+<img
+
+id="preview"
+
+src="https://placehold.co/300x220?text=Food+Preview"
+
+alt="Preview">
+
+</div>
+
+
+<button type="submit" id="submit-btn">
+
+<i class="fa-solid fa-plus"></i>
+
+Add Product
+
+</button>
+
+</form>
+
+</div>
+<!--=================================
+        PRODUCT LIST SECTION
+==================================-->
+
+<div class="table-section">
+
+    <div class="table-header">
+
+        <h2>
+
+            <i class="fa-solid fa-list"></i>
+
+            Product List
+
+        </h2>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="search-product"
+                placeholder="Search Product...">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </div>
+
+    </div>
+
+
+    <div class="table-responsive">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Image</th>
+
+                    <th>Name</th>
+
+                    <th>Category</th>
+
+                    <th>Price</th>
+
+                    <th>Edit</th>
+
+                    <th>Delete</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="product-table">
+
+                <!-- JavaScript will load products here -->
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!--=================================
+        TOAST MESSAGE
+==================================-->
+
+<div id="toast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <span id="toast-message">
+
+        Product Added Successfully
+
+    </span>
+
+</div>
+
+
+<!--=================================
+        FOOTER
+==================================-->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h2>Layered Cafe</h2>
+
+        <p>
+
+            Admin Dashboard for managing cafe menu products.
+
+        </p>
+
+        <p>
+
+            © 2026 Layered Cafe. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!--=================================
+        JAVASCRIPT
+==================================-->
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>
